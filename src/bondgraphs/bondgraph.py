@@ -22,7 +22,6 @@ class DirectedBondgraph(BondgraphViewer, CausalBondgraph):
         self.__add_bonds(bonds)
         for ekey in self.__elements:
             self.__elements[ekey].check_bonds()
-        self.__check_connections()
         self._assign_causalities()
         self.show_bond_causalities()
         self.show_bonds()
